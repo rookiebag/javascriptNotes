@@ -38,10 +38,6 @@
                     <div class="col-md-10 col-lg-8 col-xl-7">
                         <div class="post-heading">
                             <h1>JS is a lightweight</h1>
-                            <h2 class="subheading">JS is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. 
-                                JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, 
-                                and declarative (e.g. functional programming) styles.
-                            </h2>
                         </div>
                     </div>
                 </div>
@@ -52,28 +48,99 @@
             <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 justify-content-center">
                     <div class="col-md-10 col-lg-8 col-xl-7">
-                        <p>Never in all their history have men been able truly to conceive of the world as one: a single sphere, a globe, having the qualities of a globe, a round earth in which all the directions eventually meet, in which there is no center because every point, or none, is center — an equal earth which all men occupy as equals. The airman's earth, if free men make it, will be truly round: a globe in practice, not in theory.</p>
-                        <p>Science cuts two ways, of course; its products can be used for both good and evil. But there's no turning back from science. The early warnings about technological dangers also come from science.</p>
-                        <p>What was most significant about the lunar voyage was not that man set foot on the Moon but that they set eye on the earth.</p>
-                        <p>A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her.</p>
-                        <p>For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.</p>
-                        <h2 class="section-heading">The Final Frontier</h2>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <p>There can be no thought of finishing for ‘aiming for the stars.’ Both figuratively and literally, it is a task to occupy the generations. And no matter how much progress one makes, there is always the thrill of just beginning.</p>
-                        <blockquote class="blockquote">The dreams of yesterday are the hopes of today and the reality of tomorrow. Science has not yet mastered prophecy. We predict too much for the next year and yet far too little for the next ten.</blockquote>
-                        <p>Spaceflights cannot be stopped. This is not the work of any one man or even a group of men. It is a historical process which mankind is carrying out in accordance with the natural laws of human development.</p>
-                        <h2 class="section-heading">Reaching for the Stars</h2>
-                        <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would crumble and fall apart. Seeing this has to change a man.</p>
-                        <a href="#!"><img class="img-fluid" src="assets/img/post-sample-image.jpg" alt="..." /></a>
-                        <span class="caption text-muted">To go places and do things that have never been done before – that’s what living is all about.</span>
-                        <p>Space, the final frontier. These are the voyages of the Starship Enterprise. Its five-year mission: to explore strange new worlds, to seek out new life and new civilizations, to boldly go where no man has gone before.</p>
-                        <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                        </p>
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">JS Intro</h4>
+                              <p class="card-text">
+                                JS is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions. 
+                                JavaScript is a prototype-based, multi-paradigm, single-threaded, dynamic language, supporting object-oriented, imperative, 
+                                and declarative (e.g. functional programming) styles.
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">JS primitive types</h4>
+                              <p class="card-text">
+                                <ul>
+                                    <li>string</li>
+                                    <li>number</li>
+                                    <li>null</li>
+                                    <li>undefined</li>
+                                    <li>boolean</li>
+                                    <li>symbol</li>
+                                    <li>bigint</li>
+                                </ul>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Difference between <code>undefined</code> and <code>null</code>?</h4>
+                              <p class="card-text"><code>undefined</code> is the default value of a variable that has not been assigned a specific value. Or a function that has no <strong>explicit</strong> return value ex. <code>console.log(1)</code>. Or a property that does not exist in an object. The JavaScript engine does this for us the <strong>assigning</strong> of <code>undefined</code> value.</p>
+
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code> 
+                                            <span class="kd">let</span> <span class="nx">_thisIsUndefined</span><span class="p">;</span>
+                                            <span class="kd">const</span> <span class="nx">doNothing</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{};</span>
+                                            <span class="kd">const</span> <span class="nx">someObj</span> <span class="o">=</span> <span class="p">{</span>
+                                            <span class="na">a</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">ay</span><span class="dl">"</span><span class="p">,</span>
+                                            <span class="na">b</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">bee</span><span class="dl">"</span><span class="p">,</span>
+                                            <span class="na">c</span> <span class="p">:</span> <span class="dl">"</span><span class="s2">si</span><span class="dl">"</span>
+                                            <span class="p">};</span>
+                                                                     
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">_thisIsUndefined</span><span class="p">);</span> <span class="c1">//logs undefined</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">doNothing</span><span class="p">());</span> <span class="c1">//logs undefined</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">someObj</span><span class="p">[</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">]);</span> <span class="c1">//logs undefined</span>
+                                        </code>
+                                    </pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                       <div class="highlight__panel-action js-fullscreen-code-action">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on">
+                                             <title>Enter fullscreen mode</title>
+                                             <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                          </svg>
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off">
+                                             <title>Exit fullscreen mode</title>
+                                             <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+
+                                <p class="card-text">
+                                    <code>null</code> is <strong>"a value that represents no value"</strong>. <code>null</code> is value that has been <strong>explicitly</strong> defined to a variable. In this example we get a value of <code>null</code> when the <code>fs.readFile</code> method does not throw an error.
+                                </p>
+
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code>  
+                                        <span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">path/to/file</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span> <span class="c1">//it logs null when no error occurred</span>
+                                         <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">){</span>
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+                                         <span class="p">}</span>
+                                         <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                                       <span class="p">});</span>
+                                    </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                    <div class="highlight__panel-action js-fullscreen-code-action">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                    </svg>
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                    </svg>
+                                    
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
