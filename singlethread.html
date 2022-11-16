@@ -76,6 +76,43 @@
                                 </p>
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Javascript Is Single Threaded, How Is It Asynchronous</h4>
+                              <p class="card-text">
+                                Within JS we have a lexical environment, syntax parser, an execution context (memory heap and call stack) that is used to execute the JS code. But except these browsers also have Event Loops, Callback queue, and WebAPIs that is also used to run the JS code. Although these are not part of JS it also helps to execute the JS properly as we sometimes used the browser functions within the JS.
+                                <p>
+                                    As you can see in the previoud diagram, DOM, AJAX, and Timeout are not actually part of JavaScript but the part of RunTime Environment or browser, so these can be run asynchronously within the WebAPI using the callback queue and again put in the call stack using event loop to execute.
+                                </p>
+                                <p>
+                                    Let us take an example to be very clear of the concept. Suppose we have the following piece of code that we want to execute in the JS run-time environment.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code>
+                                            console.log('A');
+   
+                                            setTimeout(() => {
+                                               console.log('B');
+                                              }, 3000);
+                                                
+                                            console.log('C');
+
+                                            // OUTPUT
+                                            // A C B
+                                        </code>
+                                    </pre>
+                                </div>
+                                <p>
+                                    When JS tries to execute the above program, it places the first statement in the call stack which gets executed and prints A in the console and it gets to pop out of the stack. Now, it places the second statement in the call stack and when it tries to execute the statement, it finds out that setTimeout() doesn’t belong to JS so it pops out the function and puts in the WebAPI to get executed there. Since the call stack is now again empty, it places the third statement in the stack and executes it thus prints C in the console.
+                                </p>
+                                <p>
+                                    In the meanwhile, the WebAPI executes the timeout function and places the code in the callback queue. The eventloop checks if the call stack is empty or not or whether there is any statement in the callback queue that needs to be executed all the time. As soon as the event loop checks that the call stack is empty and there is something in the callback queue that needs to be executed, it places the statement in the call stack and the call stack executes the statement and prints B in the console of the browser.
+                                </p>
+                              </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
