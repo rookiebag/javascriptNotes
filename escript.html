@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>JS Intro</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="/javascriptNotes">JS</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto py-4 py-lg-0">
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="https://rookiebag.github.io/">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('assets/img/escript.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h1>EcmaScript</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Intro</h4>
+                                <p class="card-text">
+                                    EScript is a JavaScript standard intended to ensure the interoperability of web pages across different browsers.
+                                <hr/>
+                                ECMAScript is a standard for making scripting languages which means that JavaScript follows the specification changes
+                                in ECMAScript standard because it is the blueprint of JavaScript.
+                                </p>
+                                <p class="card-text">
+                                <table class="alt">
+                                    <tbody>
+                                        <tr>
+                                            <th>Based on</th>
+                                            <th>ES5</th>
+                                            <th>ES6</th>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Definition</strong></td>
+                                            <td>ES5 is the fifth edition of the ECMAScript (a trademarked scripting language specification defined by ECMA International)</td>
+                                            <td>ES6 is the sixth edition of the ECMAScript (a trademarked scripting language specification defined by ECMA International).</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Release</strong></td>
+                                            <td>It was introduced in 2009.</td>
+                                            <td>It was introduced in 2015.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Data-types</strong></td>
+                                            <td>ES5 supports primitive data types that are <strong>string, number, boolean, null,</strong> and <strong>undefined</strong>.</td>
+                                            <td>In ES6, there are some additions to JavaScript data types. It introduced a new primitive data type <strong>'symbol'</strong> for supporting unique values.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Defining Variables</strong></td>
+                                            <td>In ES5, we could only define the variables by using the <strong>var</strong> keyword.</td>
+                                            <td>In ES6, there are two new ways to define variables that are <strong>let</strong> and <strong>const</strong>.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Performance</strong></td>
+                                            <td>As ES5 is prior to ES6, there is a non-presence of some features, so it has a lower performance than ES6.</td>
+                                            <td>Because of new features and the shorthand storage implementation ES6 has a higher performance than ES5.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Support</strong></td>
+                                            <td>A wide range of communities supports it.</td>
+                                            <td>It also has a lot of community support, but it is lesser than ES5.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Object Manipulation</strong></td>
+                                            <td>ES5 is time-consuming than ES6.</td>
+                                            <td>Due to destructuring and speed operators, object manipulation can be processed more smoothly in ES6.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Arrow Functions</strong></td>
+                                            <td>In ES5, both <strong>function</strong> and <strong>return</strong> keywords are used to define a function.</td>
+                                            <td>An arrow function is a new feature introduced in ES6 by which we don't require the <strong>function</strong> keyword to define the function.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Loops</strong></td>
+                                            <td>In ES5, there is a use of <strong>for</strong> loop to iterate over elements.</td>
+                                            <td>ES6 introduced the concept of <strong>for...of</strong> loop to perform an iteration over the values of the iterable objects.</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">features in EcmaScript</h4>
+                                <p class="card-text">
+                                    Arrow function, classes, Templae Strings, Enhanced Object Literals
+                                    Object Destruction, Promises, Generators, Modules, Symbol, Proxis,
+                                    Sets, Default Funciton parameters, Rest and Spread, Block Scoping let and const
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Difference between var, let and const</h4>
+                                <p class="card-text">
+                                    Variables declared with var keyword are function scoped.
+                                    What this means that variables can be accessed across that function even if we declare that variable inside a block.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">giveMeX</span><span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                  <span class="k">if</span> <span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                  <span class="k">return</span> <span class="nx">x</span><span class="p">;</span>
+                                <span class="p">}</span>
+                                
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">giveMeX</span><span class="p">(</span><span class="kc">false</span><span class="p">));</span>
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">giveMeX</span><span class="p">(</span><span class="kc">true</span><span class="p">));</span>
+                                </code></pre>
+                                </div>
+                                <p class="card-text">
+                                    The first console.log statement logs undefined
+                                    and the second 5. We can access the x variable due
+                                    to the reason that it gets hoisted at the top of the function scope. So our function code is intepreted like this.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">giveMeX</span><span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="kd">var</span> <span class="nx">x</span><span class="p">;</span> <span class="c1">// has a default value of undefined</span>
+                                      <span class="k">if</span> <span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                      <span class="k">return</span> <span class="nx">x</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                </div>
+                                <p class="card-text">
+                                    If you are wondering why it logs undefined in the first console.log statement remember variables declared without an initial value has a default value of undefined.
+                                    <br/><br/>
+                                    Variables declared with let and const keyword are block scoped. What this means that variable can only be accessed on that block {} on where we declare it.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">giveMeX</span><span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">if</span> <span class="p">(</span><span class="nx">showX</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                      <span class="k">return</span> <span class="nx">x</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    
+                                    <span class="kd">function</span> <span class="nx">giveMeY</span><span class="p">(</span><span class="nx">showY</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">if</span> <span class="p">(</span><span class="nx">showY</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="kd">let</span> <span class="nx">y</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                      <span class="k">return</span> <span class="nx">y</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                </div>
+                                <p class="card-text">
+                                    If we call this functions with an argument of false it throws a Reference Error because we can't access the x and y variables outside that block and those variables are not hoisted.
+                                    <br/>
+                                    There is also a difference between let and const we can assign new values using let but we can't in const but const are mutable meaning. What this means is if the value that we assign to a const is an object we can change the values of those properties but can't reassign a new value to that variable.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Arrow Functions</h4>
+                                <p class="card-text">
+                                    Arrow Functions are a new way of making functions in JavaScript. Arrow Functions takes a little time in making functions and has a cleaner syntax than a function expression because we omit the function keyword in making them.
+                                </p>
+                            </div>
+                            <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript">
+                                <code>
+                                <span class="c1">//ES5 Version</span>
+                                <span class="kd">var</span> <span class="nx">getCurrentDate</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(){</span>
+                                  <span class="k">return</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+                                <span class="p">}</span>
+                                
+                                <span class="c1">//ES6 Version</span>
+                                <span class="kd">const</span> <span class="nx">getCurrentDate</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="k">new</span> <span class="nb">Date</span><span class="p">();</span>
+                                </code></pre>
+                            </div>
+                            <p class="card-text">
+                                In this example, in the ES5 Version have function(){} declaration and return keyword needed to make a function and return a value respectively. 
+                                In the Arrow Function version we only need the () parentheses and we don't need a return statement because Arrow Functions have a implicit return 
+                                if we have only one expression or value to return.
+                            </p>
+                            <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="c1">//ES5 Version</span>
+                                <span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+                                  <span class="k">return</span> <span class="dl">'</span><span class="s1">Hello </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">!</span><span class="dl">'</span><span class="p">;</span>
+                                <span class="p">}</span>
+                                
+                                <span class="c1">//ES6 Version</span>
+                                <span class="kd">const</span> <span class="nx">greet</span> <span class="o">=</span> <span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="s2">`Hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                <span class="kd">const</span> <span class="nx">greet2</span> <span class="o">=</span> <span class="nx">name</span> <span class="o">=&gt;</span> <span class="s2">`Hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                
+                                </code></pre>
+                            </div>
+                            <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">getArgs</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="nx">arguments</span>
+                                
+                                <span class="kd">const</span> <span class="nx">getArgs2</span> <span class="o">=</span> <span class="p">(...</span><span class="nx">rest</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">rest</span>
+                                </code></pre>
+                            </div>
+                            <p class="card-text">
+                                Arrow functions don't have access to the arguments object. So calling the first getArgs func will throw an Error. Instead we can use the rest parameters to get all the arguments passed in an arrow function.
+                            </p>
+                            <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="p">{</span>
+                                  <span class="na">result</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+                                  <span class="na">nums</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
+                                  <span class="nx">computeResult</span><span class="p">()</span> <span class="p">{</span>
+                                    <span class="c1">// "this" here refers to the "data" object</span>
+                                    <span class="kd">const</span> <span class="nx">addAll</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                      <span class="c1">// arrow functions "copies" the "this" value of </span>
+                                      <span class="c1">// the lexical enclosing function</span>
+                                      <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">nums</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span> <span class="nx">cur</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">cur</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                                    <span class="p">};</span>
+                                    <span class="k">this</span><span class="p">.</span><span class="nx">result</span> <span class="o">=</span> <span class="nx">addAll</span><span class="p">();</span>
+                                  <span class="p">}</span>
+                                <span class="p">};</span>
+                                </code></pre>
+                            </div>
+                            <p class="card-text">
+                                Arrow functions don't have their own this value. It captures or gets the this value of lexically enclosing function or in this example, the addAll function copies the this value of the computeResult method and if we declare an arrow function in the global scope the value of this would be the window object.
+                            </p>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Classes</h4>
+                                <p class="card-text">
+                                    Classes is the new way of writing constructor functions in JavaScript. It is syntactic sugar for using constructor functions, it still uses prototypes and Prototype-Based Inheritance under the hood.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code>   <span class="c1">//ES5 Version</span>
+                                   <span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">){</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="nx">lastName</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">address</span> <span class="o">=</span> <span class="nx">address</span><span class="p">;</span>
+                                   <span class="p">}</span>
+                                
+                                   <span class="nx">Person</span><span class="p">.</span><span class="nb">self</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                                     <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+                                   <span class="p">}</span>
+                                
+                                   <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                                     <span class="k">return</span> <span class="dl">"</span><span class="s2">[object Person]</span><span class="dl">"</span><span class="p">;</span>
+                                   <span class="p">}</span>
+                                
+                                   <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">getFullName</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(){</span>
+                                     <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">+</span> <span class="dl">"</span><span class="s2"> </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
+                                   <span class="p">}</span>  
+                                
+                                   <span class="c1">//ES6 Version</span>
+                                   <span class="kd">class</span> <span class="nx">Person</span> <span class="p">{</span>
+                                        <span class="kd">constructor</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">){</span>
+                                            <span class="k">this</span><span class="p">.</span><span class="nx">lastName</span> <span class="o">=</span> <span class="nx">lastName</span><span class="p">;</span>
+                                            <span class="k">this</span><span class="p">.</span><span class="nx">firstName</span> <span class="o">=</span> <span class="nx">firstName</span><span class="p">;</span>
+                                            <span class="k">this</span><span class="p">.</span><span class="nx">age</span> <span class="o">=</span> <span class="nx">age</span><span class="p">;</span>
+                                            <span class="k">this</span><span class="p">.</span><span class="nx">address</span> <span class="o">=</span> <span class="nx">address</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                
+                                        <span class="kd">static</span> <span class="nb">self</span><span class="p">()</span> <span class="p">{</span>
+                                           <span class="k">return</span> <span class="k">this</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                
+                                        <span class="nx">toString</span><span class="p">(){</span>
+                                           <span class="k">return</span> <span class="dl">"</span><span class="s2">[object Person]</span><span class="dl">"</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                
+                                        <span class="nx">getFullName</span><span class="p">(){</span>
+                                           <span class="k">return</span> <span class="s2">`</span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">firstName</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">lastName</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                   <span class="p">}</span>
+                                </code></pre>
+                                </div>
+                                <p class="card-text">
+                                    Overriding Methods and Inheriting from another class.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">//ES5 Version</span>
+                                    <span class="nx">Employee</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">);</span>
+                                    
+                                    <span class="kd">function</span> <span class="nx">Employee</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">,</span> <span class="nx">jobTitle</span><span class="p">,</span> <span class="nx">yearStarted</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="nx">Person</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">);</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">jobTitle</span> <span class="o">=</span> <span class="nx">jobTitle</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">yearStarted</span> <span class="o">=</span> <span class="nx">yearStarted</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="nx">Employee</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">describe</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="s2">`I am </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">()}</span><span class="s2"> and I have a position of </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">jobTitle</span><span class="p">}</span><span class="s2"> and I started at </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">yearStarted</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="nx">Employee</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="dl">"</span><span class="s2">[object Employee]</span><span class="dl">"</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="c1">//ES6 Version</span>
+                                    <span class="kd">class</span> <span class="nx">Employee</span> <span class="kd">extends</span> <span class="nx">Person</span> <span class="p">{</span> <span class="c1">//Inherits from "Person" class</span>
+                                      <span class="kd">constructor</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">,</span> <span class="nx">jobTitle</span><span class="p">,</span> <span class="nx">yearStarted</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="k">super</span><span class="p">(</span><span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">age</span><span class="p">,</span> <span class="nx">address</span><span class="p">);</span>
+                                        <span class="k">this</span><span class="p">.</span><span class="nx">jobTitle</span> <span class="o">=</span> <span class="nx">jobTitle</span><span class="p">;</span>
+                                        <span class="k">this</span><span class="p">.</span><span class="nx">yearStarted</span> <span class="o">=</span> <span class="nx">yearStarted</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                    
+                                      <span class="nx">describe</span><span class="p">()</span> <span class="p">{</span>
+                                        <span class="k">return</span> <span class="s2">`I am </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">getFullName</span><span class="p">()}</span><span class="s2"> and I have a position of </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">jobTitle</span><span class="p">}</span><span class="s2"> and I started at </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">yearStarted</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                    
+                                      <span class="nx">toString</span><span class="p">()</span> <span class="p">{</span> <span class="c1">// Overriding the "toString" method of "Person"</span>
+                                        <span class="k">return</span> <span class="dl">"</span><span class="s2">[object Employee]</span><span class="dl">"</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                    <span class="p">}</span>
+                                    
+                                    </code></pre>
+                                </div>
+                                <p class="card-text">
+                                    So how do we know that it uses prototypes under the hood?
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code>   <span class="kd">class</span> <span class="nx">Something</span> <span class="p">{</span>
+                                        
+                                           <span class="p">}</span>
+                                        
+                                           <span class="kd">function</span> <span class="nx">AnotherSomething</span><span class="p">(){</span>
+                                        
+                                           <span class="p">}</span>
+                                           <span class="kd">const</span> <span class="k">as</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">AnotherSomething</span><span class="p">();</span>
+                                           <span class="kd">const</span> <span class="nx">s</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Something</span><span class="p">();</span>
+                                        
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">Something</span><span class="p">);</span> <span class="c1">// logs "function"</span>
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">AnotherSomething</span><span class="p">);</span> <span class="c1">// logs "function"</span>
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">as</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span> <span class="c1">// logs "[object Object]"</span>
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">as</span><span class="p">.</span><span class="nx">toString</span><span class="p">());</span> <span class="c1">// logs "[object Object]"</span>
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">as</span><span class="p">.</span><span class="nx">toString</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">);</span> 
+                                           <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">s</span><span class="p">.</span><span class="nx">toString</span> <span class="o">===</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">toString</span><span class="p">);</span> 
+                                           <span class="c1">// both logs return true indicating that we are still using </span>
+                                           <span class="c1">// prototypes under the hoods because the Object.prototype is</span>
+                                           <span class="c1">// the last part of the Prototype Chain and "Something"</span>
+                                           <span class="c1">// and "AnotherSomething" both inherit from Object.prototype</span>
+                                        </code></pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Template Literals</h4>
+                                <p class="card-text">
+                                    Template Literals are a new way of making strings in JavaScript. We can make Template Literal by using the backtick or back-quote symbol.
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">//ES5 Version</span>
+                                    <span class="kd">var</span> <span class="nx">greet</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">Hi I</span><span class="se">\'</span><span class="s1">m Mark</span><span class="dl">'</span><span class="p">;</span>
+                                    
+                                    <span class="c1">//ES6 Version</span>
+                                    <span class="kd">let</span> <span class="nx">greet</span> <span class="o">=</span> <span class="s2">`Hi I'm Mark`</span><span class="p">;</span>
+                                    <span class="c1">//ES5 Version</span>
+                                        <span class="kd">var</span> <span class="nx">lastWords</span> <span class="o">=</span> <span class="dl">'</span><span class="se">\n</span><span class="dl">'</span>
+                                          <span class="o">+</span> <span class="dl">'</span><span class="s1">   I  </span><span class="se">\n</span><span class="dl">'</span>
+                                          <span class="o">+</span> <span class="dl">'</span><span class="s1">   Am  </span><span class="se">\n</span><span class="dl">'</span>
+                                          <span class="o">+</span> <span class="dl">'</span><span class="s1">Iron Man </span><span class="se">\n</span><span class="dl">'</span><span class="p">;</span>
+                                        
+                                        
+                                        <span class="c1">//ES6 Version</span>
+                                        <span class="kd">let</span> <span class="nx">lastWords</span> <span class="o">=</span> <span class="s2">`
+                                            I
+                                            Am
+                                          Iron Man   
+                                        `</span><span class="p">;</span>
+                                        </code>
+                                        <code><span class="c1">//ES5 Version</span>
+                                            <span class="kd">function</span> <span class="nx">greet</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+                                              <span class="k">return</span> <span class="dl">'</span><span class="s1">Hello </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">!</span><span class="dl">'</span><span class="p">;</span>
+                                            <span class="p">}</span>
+                                            
+                                            
+                                            <span class="c1">//ES6 Version</span>
+                                            <span class="kd">const</span> <span class="nx">greet</span> <span class="o">=</span> <span class="nx">name</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                              <span class="k">return</span> <span class="s2">`Hello </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2"> !`</span><span class="p">;</span>
+                                            <span class="p">}</span>
+                                            </code>
+                                    </pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Object Destructing</h4>
+                                <p class="card-text">
+                                    Object Destructuring is a new and cleaner way of getting or extracting values from an object or an array.
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code><span class="kd">const</span> <span class="nx">employee</span> <span class="o">=</span> <span class="p">{</span>
+                                      <span class="na">firstName</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Marko</span><span class="dl">"</span><span class="p">,</span>
+                                      <span class="na">lastName</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Polo</span><span class="dl">"</span><span class="p">,</span>
+                                      <span class="na">position</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Software Developer</span><span class="dl">"</span><span class="p">,</span>
+                                      <span class="na">yearHired</span><span class="p">:</span> <span class="mi">2017</span>
+                                        <span class="p">};</span>
+                                    </code>
+                                    <code><span class="kd">var</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">firstName</span><span class="p">;</span>
+                                        <span class="kd">var</span> <span class="nx">lastName</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">lastName</span><span class="p">;</span>
+                                        <span class="kd">var</span> <span class="nx">position</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">position</span><span class="p">;</span>
+                                        <span class="kd">var</span> <span class="nx">yearHired</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">.</span><span class="nx">yearHired</span><span class="p">;</span>
+                                        </code>
+                                    </pre>
+                                </div>
+                                If we use object destructuring it looks cleaner and takes a little time than the old way. The syntax for object destructuring is that if we are getting properties in an object we use the {} and inside that, we specify the properties we want to extract and if we are getting data from an array we use the [].
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code>
+                                            <span class="kd">let</span> <span class="p">{</span> <span class="nx">firstName</span><span class="p">,</span> <span class="nx">lastName</span><span class="p">,</span> <span class="nx">position</span><span class="p">,</span> <span class="nx">yearHired</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">;</span>
+                                        </code>
+                                        <code><span class="kd">let</span> <span class="p">{</span> <span class="na">firstName</span><span class="p">:</span> <span class="nx">fName</span><span class="p">,</span> <span class="na">lastName</span><span class="p">:</span> <span class="nx">lName</span><span class="p">,</span> <span class="nx">position</span><span class="p">,</span> <span class="nx">yearHired</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">;</span>
+                                        </code>
+                                        <code><span class="kd">let</span> <span class="p">{</span> <span class="nx">firstName</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Mark</span><span class="dl">"</span><span class="p">,</span> <span class="na">lastName</span><span class="p">:</span> <span class="nx">lName</span><span class="p">,</span> <span class="nx">position</span><span class="p">,</span> <span class="nx">yearHired</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">employee</span><span class="p">;</span>
+                                        </code>
+                                    </pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">EcmaScript 6 Modules</h4>
+                                <p class="card-text">
+                                    Modules lets us split our code base to multiple files for more maintainability and this lets us avoid putting all of our code in one big file (yucksss). Before ES6 has supported Modules there were two popular module systems that were used for Code Maintainability in JavaScript.
+                                <ul>
+                                    <li>CommonJS - <strong>Nodejs</strong>
+                                    </li>
+                                    <li>AMD (Asynchronous Module Definition) - <strong>Browsers</strong>
+                                    </li>
+                                </ul>
+                                <p>Basically, the sytanx for using modules are straightforward, <br>
+                                    <code>import</code> is used for <em>getting</em> functionality from another file or several functionalities or values while <br>
+                                    <code>export</code> is used for <em>exposing</em> functionality from a file or several functionalities or values.
+                                </p>
+                                <p><strong>Exporting functionalites in a File or Named Exports</strong></p>
+                                <p><em>Using ES5 (CommonJS)</em><br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES5 CommonJS - helpers.js</span>
+                                    <span class="nx">exports</span><span class="p">.</span><span class="nx">isNull</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="nx">exports</span><span class="p">.</span><span class="nx">isUndefined</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="nx">exports</span><span class="p">.</span><span class="nx">isNullOrUndefined</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">exports</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">||</span> <span class="nx">exports</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                </div>
+                                <p><em>Using ES6 Modules</em><br></p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES6 Modules - helpers.js</span>
+                                    <span class="k">export</span> <span class="kd">function</span> <span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">){</span>
+                                      <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="k">export</span> <span class="kd">function</span> <span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="k">export</span> <span class="kd">function</span> <span class="nx">isNullOrUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">||</span> <span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+                                    <span class="p">}</span>
+                                    
+                                    
+                                    </code></pre>
+                                </div>
+                                <p><strong>Importing functionalites in another File</strong><br></p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES5 (CommonJS) - index.js</span>
+                                    <span class="kd">const</span> <span class="nx">helpers</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./helpers.js</span><span class="dl">'</span><span class="p">);</span> <span class="c1">// helpers is an object</span>
+                                    <span class="kd">const</span> <span class="nx">isNull</span> <span class="o">=</span> <span class="nx">helpers</span><span class="p">.</span><span class="nx">isNull</span><span class="p">;</span>
+                                    <span class="kd">const</span> <span class="nx">isUndefined</span> <span class="o">=</span> <span class="nx">helpers</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">;</span>
+                                    <span class="kd">const</span> <span class="nx">isNullOrUndefined</span> <span class="o">=</span> <span class="nx">helpers</span><span class="p">.</span><span class="nx">isNullOrUndefined</span><span class="p">;</span>
+                                    
+                                    <span class="c1">// or if your environment supports Destructuring</span>
+                                    <span class="kd">const</span> <span class="p">{</span> <span class="nx">isNull</span><span class="p">,</span> <span class="nx">isUndefined</span><span class="p">,</span> <span class="nx">isNullOrUndefined</span> <span class="p">}</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./helpers.js</span><span class="dl">'</span><span class="p">);</span>
+                                    </code>
+                                    <code><span class="c1">// ES6 Modules - index.js</span>
+                                        <span class="k">import</span> <span class="o">*</span> <span class="k">as</span> <span class="nx">helpers</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./helpers.js</span><span class="dl">'</span><span class="p">;</span> <span class="c1">// helpers is an object</span>
+                                        
+                                        <span class="c1">// or </span>
+                                        
+                                        <span class="k">import</span> <span class="p">{</span> <span class="nx">isNull</span><span class="p">,</span> <span class="nx">isUndefined</span><span class="p">,</span> <span class="nx">isNullOrUndefined</span> <span class="k">as</span> <span class="nx">isValid</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">./helpers.js</span><span class="dl">'</span><span class="p">;</span>
+                                        
+                                        <span class="c1">// using "as" for renaming named exports</span>
+                                        </code>
+                                    </pre>
+                                </div>
+                                <p><strong>Exporting a Single Functionality in a File or Default Exports</strong></p>
+                                <p><em>Using ES5 (CommonJS)</em><br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES5 (CommonJS) - index.js</span>
+                                <span class="kd">class</span> <span class="nx">Helpers</span> <span class="p">{</span>
+                                  <span class="kd">static</span> <span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                
+                                  <span class="kd">static</span> <span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                
+                                  <span class="kd">static</span> <span class="nx">isNullOrUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+                                  <span class="p">}</span>
+                                <span class="p">}</span>
+                                
+                                
+                                <span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">Helpers</span><span class="p">;</span>
+                                </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                        <div class="highlight__panel-action js-fullscreen-code-action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on">
+                                                <title>Enter fullscreen mode</title>
+                                                <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off">
+                                                <title>Exit fullscreen mode</title>
+                                                <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><em>Using ES6 Modules</em><br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES6 Modules - helpers.js</span>
+                                <span class="kd">class</span> <span class="nx">Helpers</span> <span class="p">{</span>
+                                  <span class="kd">static</span> <span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                
+                                  <span class="kd">static</span> <span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="nx">val</span> <span class="o">===</span> <span class="kc">undefined</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                
+                                  <span class="kd">static</span> <span class="nx">isNullOrUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="p">{</span>
+                                    <span class="k">return</span> <span class="k">this</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="nx">val</span><span class="p">)</span> <span class="o">||</span> <span class="k">this</span><span class="p">.</span><span class="nx">isUndefined</span><span class="p">(</span><span class="nx">val</span><span class="p">);</span>
+                                  <span class="p">}</span>
+                                <span class="p">}</span>
+                                
+                                <span class="k">export</span> <span class="k">default</span> <span class="nx">Helpers</span>
+                                </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                        <div class="highlight__panel-action js-fullscreen-code-action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on">
+                                                <title>Enter fullscreen mode</title>
+                                                <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off">
+                                                <title>Exit fullscreen mode</title>
+                                                <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><strong>Importing a Single Functionality from another File</strong></p>
+                                <p><em>Using ES5 (CommonJS)</em><br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// Using ES5 (CommonJS) - index.js</span>
+                                <span class="kd">const</span> <span class="nx">Helpers</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">./helpers.js</span><span class="dl">'</span><span class="p">);</span> 
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Helpers</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="kc">null</span><span class="p">));</span>
+                                </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                        <div class="highlight__panel-action js-fullscreen-code-action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on">
+                                                <title>Enter fullscreen mode</title>
+                                                <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off">
+                                                <title>Exit fullscreen mode</title>
+                                                <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p><em>Using ES6 Modules</em><br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="k">import</span> <span class="nx">Helpers</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">.helpers.js</span><span class="dl">'</span>
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Helpers</span><span class="p">.</span><span class="nx">isNull</span><span class="p">(</span><span class="kc">null</span><span class="p">));</span>
+                                </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                        <div class="highlight__panel-action js-fullscreen-code-action">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on">
+                                                <title>Enter fullscreen mode</title>
+                                                <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off">
+                                                <title>Exit fullscreen mode</title>
+                                                <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>This is the basics of using <strong>ES6 Modules</strong>. I won't explain all about Modules because it's a broad topic and my Post is now really long.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    What is the <code>Set</code> object and how does it work?
+                                </h4>
+                                <p class="card-text">
+                                <p>The <strong>Set</strong> object is an <strong>ES6</strong> feature that lets you store unique values, <strong>primitives</strong> or <strong>object references</strong>. A value in a Set can only occur <strong>once</strong>. It checks if a value exists in the set object using the <strong>SameValueZero</strong>  algorithm.</p>
+                                <p>We can make <code>Set</code> instance using <code>Set</code> constructor and we can optionally pass an <code>Iterable</code> as the initial value.<br>
+                                </p>
+                                <p>We can add a new value into the <code>Set</code> instance using the <code>add</code> method and since the <code>add</code> returns the <code>Set</code> object we can chain <code>add</code> calls. If a value already exists in <code>Set</code> object it will not be added again.<br>
+                                </p>
+                                <p>We can remove a value from the <code>Set</code> instance using the <code>delete</code> method, this method returns a <code>boolean</code> indicating <code>true</code> if a value exists in the <code>Set</code> object and <code>false</code> indicating that value does not exist.<br>
+                                </p>
+                                <p>We can check if a specific value exists in the <code>Set</code> instance using the <code>has</code> method.<br>
+                                </p>
+                                <p>We can get the length of the <code>Set</code> instance using the <code>size</code> property.<br>
+                                </p>
+                                <p>We can delete or remove all the elements in the <code>Set</code> instance using the <code>clear</code>.<br>
+                                </p>
+                                <p>We can use the <code>Set</code> object for removing duplicate elements in an array.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code>
+                                    <span class="kd">const</span> <span class="nx">set1</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">();</span>
+                                    <span class="kd">const</span> <span class="nx">set2</span> <span class="o">=</span> <span class="k">new</span> <span class="nb">Set</span><span class="p">([</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">b</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">c</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">d</span><span class="dl">"</span><span class="p">,</span><span class="dl">"</span><span class="s2">e</span><span class="dl">"</span><span class="p">]);</span>
+                                    </code>
+                                    <code>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">f</span><span class="dl">"</span><span class="p">);</span>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">g</span><span class="dl">"</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">h</span><span class="dl">"</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">i</span><span class="dl">"</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">j</span><span class="dl">"</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">k</span><span class="dl">"</span><span class="p">).</span><span class="nx">add</span><span class="p">(</span><span class="dl">"</span><span class="s2">k</span><span class="dl">"</span><span class="p">);</span>
+                                        <span class="c1">// the last "k" will not be added to the set object because it already exists</span> 
+                                    </code>
+                                    <code>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="dl">"</span><span class="s2">k</span><span class="dl">"</span><span class="p">)</span> <span class="c1">// returns true because "k" exists in the set object</span>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="dl">"</span><span class="s2">z</span><span class="dl">"</span><span class="p">)</span> <span class="c1">// returns false because "z" does not exists in the set object</span>
+                                        
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="dl">"</span><span class="s2">a</span><span class="dl">"</span><span class="p">)</span> <span class="c1">// returns true because "a" exists in the set object</span>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">has</span><span class="p">(</span><span class="dl">"</span><span class="s2">z</span><span class="dl">"</span><span class="p">)</span> <span class="c1">// returns false because "z" does not exists in the set object</span>
+                                    </code>
+                                    <code>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">size</span> <span class="c1">// returns 10</span>    
+                                    </code>
+                                    <code>
+                                        <span class="nx">set2</span><span class="p">.</span><span class="nx">clear</span><span class="p">();</span> <span class="c1">// clears the set data</span>    
+                                    </code>
+                                    <code>
+                                        <span class="kd">const</span> <span class="nx">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+                                        <span class="kd">const</span> <span class="nx">uniqueNums</span> <span class="o">=</span> <span class="p">[...</span><span class="k">new</span> <span class="nb">Set</span><span class="p">(</span><span class="nx">numbers</span><span class="p">)];</span> <span class="c1">// has a value of [1,2,3,4,5,6,7,8]</span>
+                                    </code>
+                                    </pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Callback function</h4>
+                                <p class="card-text">
+                                    A Callback function is a function that is gonna get called at a later point in time.
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">btnAdd</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">btnAdd</span><span class="dl">'</span><span class="p">);</span>
+                                    
+                                    <span class="nx">btnAdd</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="nx">clickCallback</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="c1">// do something useless</span>
+                                    <span class="p">});</span>
+                                    </code></pre>
+                                </div>
+                                <p>In this example, we wait for the <code>click event</code> in the element with an id of <strong>btnAdd</strong>, if it is <code>clicked</code>, the <code>clickCallback</code> function is executed. A <strong>Callback</strong> function adds some functionality to some data or event. The <code>reduce</code>, <code>filter</code> and <code>map</code> methods in <strong>Array</strong> expects a callback as a parameter. A good analogy for a callback is when you call someone and if they don't answer you leave a message and you expect them to <strong>callback</strong>. The act of calling someone or leaving a <strong>message</strong> is the <strong>event or data</strong> and the <strong>callback</strong> is the <strong>action that you expect to occur later</strong>.</p>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Promises</h4>
+                                <p class="card-text">
+                                <p><strong>Promises</strong> are one way in handling asynchronous operations in <strong>JavaScript</strong>. It represents the value of an asynchronous operation. <strong>Promises</strong> was made to solve the problem of doing and dealing with async code before promises we're using callbacks.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">somefile.txt</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">if</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+                                      <span class="p">}</span>
+                                      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                                    <span class="p">});</span>
+                                    </code></pre>
+                                </div>
+                                <p>The problem with this approach if we have another async operation inside the callback and another. We will have a code that is messy and unreadable. This code is called <strong>Callback Hell</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">//Callback Hell yucksss</span>
+                                    <span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">somefile.txt</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="c1">//your code here</span>
+                                      <span class="nx">fs</span><span class="p">.</span><span class="nx">readdir</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">files</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="c1">//your code here</span>
+                                        <span class="nx">fs</span><span class="p">.</span><span class="nx">mkdir</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                          <span class="c1">//your code here</span>
+                                        <span class="p">})</span>
+                                      <span class="p">})</span>
+                                    <span class="p">})</span>
+                                    </code></pre>
+                                </div>
+                                <p>If we use promises in this code it will be more readable and easy to understand and easy to maintain.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="nx">promReadFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">file/path</span><span class="dl">'</span><span class="p">)</span>
+                                      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                        <span class="k">return</span> <span class="nx">promReaddir</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory</span><span class="dl">'</span><span class="p">);</span>
+                                      <span class="p">})</span>
+                                      <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                        <span class="k">return</span> <span class="nx">promMkdir</span><span class="p">(</span><span class="dl">'</span><span class="s1">directory</span><span class="dl">'</span><span class="p">);</span>
+                                      <span class="p">})</span>
+                                      <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+                                      <span class="p">})</span>
+                                    </code></pre>
+                                </div>
+                                <p>Promises have 3 different states.</p>
+                                <p><strong>Pending</strong> - The initial state of a promise. The promise's outcome has not yet been known because the operation has not been completed yet.</p>
+                                <p><strong>Fulfilled</strong> - The async operation is completed and successful with the resulting value. </p>
+                                <p><strong>Rejected</strong> -  The async operation has failed and has a <em>reason</em> on why it failed.</p>
+                                <p><strong>Settled</strong> - If the promise has been either <strong>Fulfilled</strong> or <strong>Rejected</strong>.</p>
+                                <p>The <strong>Promise</strong> constructor has two parameters which are functions <code>resolve</code> and <code>reject</code> respectively.<br>
+                                    If the async operation has been completed without errors call the <code>resolve</code> function to resolve the promise or if an error occurred <br>
+                                    call the <code>reject</code> function and pass the error or reason to it.<br>
+                                    We can access the result of the fulfilled promise using the <code>.then</code><br>
+                                    method and we catch errors in the <code>.catch</code> method. We chain multiple async promise operations in the <code>.then</code> method because the <code>.then</code> method returns a <strong>Promise</strong> just like the example in the imag e above.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">myPromiseAsync</span> <span class="o">=</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                          <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="nx">doSomeAsync</span><span class="p">(...</span><span class="nx">args</span><span class="p">,</span> <span class="p">(</span><span class="nx">error</span><span class="p">,</span> <span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                              <span class="k">if</span> <span class="p">(</span><span class="nx">error</span><span class="p">)</span> <span class="p">{</span>
+                                                <span class="nx">reject</span><span class="p">(</span><span class="nx">error</span><span class="p">);</span>
+                                              <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                                <span class="nx">resolve</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                                              <span class="p">}</span>
+                                            <span class="p">})</span>
+                                          <span class="p">})</span>
+                                        <span class="p">}</span>
+                                        
+                                        <span class="nx">myPromiseAsync</span><span class="p">()</span>
+                                          <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">result</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+                                          <span class="p">})</span>
+                                          <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">reason</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">reason</span><span class="p">);</span>
+                                          <span class="p">})</span>
+                                        </code></pre>
+                                </div>
+                                <p>We can make a helper func that converts an async operation with a callback to promise. It works like the <strong>promisify</strong>  utility function from the node core module <code>util</code>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">toPromise</span> <span class="o">=</span> <span class="p">(</span><span class="nx">asyncFuncWithCallback</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                          <span class="k">return</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="k">return</span> <span class="k">new</span> <span class="nb">Promise</span><span class="p">((</span><span class="nx">res</span><span class="p">,</span> <span class="nx">rej</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                              <span class="nx">asyncFuncWithCallback</span><span class="p">(...</span><span class="nx">args</span><span class="p">,</span> <span class="p">(</span><span class="nx">e</span><span class="p">,</span> <span class="nx">result</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                                <span class="k">return</span> <span class="nx">e</span> <span class="p">?</span> <span class="nx">rej</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">:</span> <span class="nx">res</span><span class="p">(</span><span class="nx">result</span><span class="p">);</span>
+                                              <span class="p">});</span>
+                                            <span class="p">});</span>
+                                          <span class="p">}</span>
+                                        <span class="p">}</span>
+                                        
+                                        <span class="kd">const</span> <span class="nx">promReadFile</span> <span class="o">=</span> <span class="nx">toPromise</span><span class="p">(</span><span class="nx">fs</span><span class="p">.</span><span class="nx">readFile</span><span class="p">);</span>
+                                        
+                                        <span class="nx">promReadFile</span><span class="p">(</span><span class="dl">'</span><span class="s1">file/path</span><span class="dl">'</span><span class="p">)</span>
+                                          <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">data</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+                                          <span class="p">})</span>
+                                          <span class="p">.</span><span class="k">catch</span><span class="p">(</span><span class="nx">e</span> <span class="o">=&gt;</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">));</span>
+                                        </code></pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    What is <em>async/await</em> and How does it work?
+                                </h4>
+                                <p class="card-text">
+                                <p><em>async/await</em> is the new way of writing asynchronous or non-blocking code in <strong>JavaScript's</strong>. It is built on top of <strong>Promises</strong>. It makes writing asynchronous code more readable and cleaner than <br>
+                                    <strong>Promises</a></strong> and <strong>Callbacks</a></strong>. But you must learn the basics of <strong>Promises</strong> before using this feature because as I said earlier it is built on top of <strong>Promises</strong> which means is still uses <strong>Promises</strong> under the hood.
+                                </p>
+                                <p>Using Promises.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">callApi</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">"</span><span class="s2">url/to/api/endpoint</span><span class="dl">"</span><span class="p">)</span>
+                                        <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">resp</span> <span class="o">=&gt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+                                        <span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                          <span class="c1">//do something with "data"</span>
+                                        <span class="p">}).</span><span class="k">catch</span><span class="p">(</span><span class="nx">err</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                          <span class="c1">//do something with "err"</span>
+                                        <span class="p">});</span>
+                                    <span class="p">}</span>
+                                    
+                                    </code></pre>
+                                </div>
+                                <p>Using Async/Await.</p>
+                                <p><strong>Note</strong>: We're using the old <em>try/catch</em> statement to <strong>catch</strong> any errors that happened in any of those async operations inside the <em>try</em> statement.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="k">async</span> <span class="kd">function</span> <span class="nx">callApi</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">try</span> <span class="p">{</span>
+                                        <span class="kd">const</span> <span class="nx">resp</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">fetch</span><span class="p">(</span><span class="dl">"</span><span class="s2">url/to/api/endpoint</span><span class="dl">"</span><span class="p">);</span>
+                                        <span class="kd">const</span> <span class="nx">data</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">json</span><span class="p">();</span>
+                                        <span class="c1">//do something with "data"</span>
+                                      <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="c1">//do something with "err"</span>
+                                      <span class="p">}</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                </div>
+                                <p><strong>Note</strong>: The <em>async</em> keyword before the function declaration makes the function return <em>implicitly</em> a <strong>Promise</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">giveMeOne</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">;</span>
+                                    
+                                    <span class="nx">giveMeOne</span><span class="p">()</span>
+                                      <span class="p">.</span><span class="nx">then</span><span class="p">((</span><span class="nx">num</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span> <span class="c1">// logs 1</span>
+                                      <span class="p">});</span>
+                                    </code></pre>
+                                </div>
+                                <p><strong>Note</strong>: The <em>await</em> keyword can <strong>only</strong> be used inside an <strong>async function</strong>. Using <em>await</em> keyword in any other function which is not an <strong>async function</strong> will throw an error. The <em>await</em> keyword <strong>awaits</strong> the right-hand side expression (presumably a <strong>Promise</strong>) to return before executing the next line of code.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">giveMeOne</span> <span class="o">=</span> <span class="k">async</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="mi">1</span><span class="p">;</span>
+                                    
+                                    <span class="kd">function</span> <span class="nx">getOne</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">try</span> <span class="p">{</span>
+                                        <span class="kd">const</span> <span class="nx">num</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">giveMeOne</span><span class="p">();</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">num</span><span class="p">);</span>
+                                      <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+                                      <span class="p">}</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="c1">//Throws a Compile-Time Error = Uncaught SyntaxError: await is only valid in an async function</span>
+                                    
+                                    <span class="k">async</span> <span class="kd">function</span> <span class="nx">getTwo</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">try</span> <span class="p">{</span>
+                                        <span class="kd">const</span> <span class="nx">num1</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">giveMeOne</span><span class="p">();</span> <span class="c1">//finishes this async operation first before going to</span>
+                                        <span class="kd">const</span> <span class="nx">num2</span> <span class="o">=</span> <span class="k">await</span> <span class="nx">giveMeOne</span><span class="p">();</span> <span class="c1">//this line</span>
+                                        <span class="k">return</span> <span class="nx">num1</span> <span class="o">+</span> <span class="nx">num2</span><span class="p">;</span>
+                                      <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">);</span>
+                                      <span class="p">}</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="k">await</span> <span class="nx">getTwo</span><span class="p">();</span> <span class="c1">// returns 2</span>
+                                    </code></pre>
+                                </div>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">
+                                    What's the difference between <strong>Spread operator</strong> and <strong>Rest operator</strong>
+                                </h4>
+                                <p class="card-text">
+                                <p>The <strong>Spread operator</strong> and <strong>Rest paremeters</strong> have the same operator <code>...</code> the difference between is that the <strong>Spread operator</strong> we <strong>give</strong> or <strong>spread</strong> individual data of an array to another data while the <strong>Rest parameters</strong> is used in a function or an array to <strong>get</strong> all the arguments or values and put them in an array or <strong>extract</strong> some pieces of them.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+                                    <span class="p">};</span>
+                                    
+                                    <span class="kd">const</span> <span class="nx">nums</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">];</span>
+                                    <span class="kd">const</span> <span class="nx">sum</span> <span class="o">=</span> <span class="nx">add</span><span class="p">(...</span><span class="nx">nums</span><span class="p">);</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">sum</span><span class="p">);</span>
+                                    
+                                    </code>
+                                    </pre>
+                                </div>
+                                <p>In this example, we're using the <strong>Spread Operator</strong> when we call the <code>add</code> function we are <strong>spreading</strong> the <code>nums</code> array. So the value of parameter <code>a</code> will be <strong>5</strong> and the value of <code>b</code> will be <strong>6</strong>. So the sum will be <strong>11</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">add</span><span class="p">(...</span><span class="nx">rest</span><span class="p">)</span> <span class="p">{</span>
+                                          <span class="k">return</span> <span class="nx">rest</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span><span class="nx">current</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">current</span><span class="p">);</span>
+                                        <span class="p">};</span>
+                                        
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span> <span class="c1">// logs 3</span>
+                                        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">));</span> <span class="c1">// logs 15</span>
+                                        </code></pre>
+                                </div>
+                                <p>In this example, we have a function <code>add</code> that accepts any number of arguments and adds them all and return the total.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">const</span> <span class="p">[</span><span class="nx">first</span><span class="p">,</span> <span class="p">...</span><span class="nx">others</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">];</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">first</span><span class="p">);</span> <span class="c1">//logs 1</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">others</span><span class="p">);</span> <span class="c1">//logs [2,3,4,5]</span>
+                                            </code></pre>
+                                </div>
+                                <p>In this another example, we are using the <strong>Rest operator</strong> to extract all the remaining array values and put them in array <code>others</code> except the first item.</p>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Default Parameters</h4>
+                              <p class="card-text">
+                                <p><strong>Default Parameters</strong> is a new way of defining default variables in <strong>JavaScript</strong> it is available in the <strong>ES6</strong> or <strong>ECMAScript 2015</strong> Version.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">//ES5 Version</span>
+                                    <span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span><span class="nx">b</span><span class="p">){</span>
+                                      <span class="nx">a</span> <span class="o">=</span> <span class="nx">a</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+                                      <span class="nx">b</span> <span class="o">=</span> <span class="nx">b</span> <span class="o">||</span> <span class="mi">0</span><span class="p">;</span>
+                                      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="c1">//ES6 Version</span>
+                                    <span class="kd">function</span> <span class="nx">add</span><span class="p">(</span><span class="nx">a</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">b</span> <span class="o">=</span> <span class="mi">0</span><span class="p">){</span>
+                                      <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">b</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    <span class="c1">//If we don't pass any argument for 'a' or 'b' then </span>
+                                    <span class="c1">// it's gonna use the "default parameter" value which is 0</span>
+                                    <span class="nx">add</span><span class="p">(</span><span class="mi">1</span><span class="p">);</span> <span class="c1">// returns 1 </span>
+                                    </code></pre>
+                                    </div>
+                                    <p>We can also use <strong>Destructuring</a></strong> in <strong>Default Paremeters</strong>.<br>                                        
+                                    </p>
+                                    <div class="highlight js-code-highlight">
+                                        <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">getFirst</span><span class="p">([</span><span class="nx">first</span><span class="p">,</span> <span class="p">...</span><span class="nx">rest</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="p">{</span>
+                                          <span class="k">return</span> <span class="nx">first</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                        
+                                        <span class="nx">getFirst</span><span class="p">();</span>  <span class="c1">// returns 0</span>
+                                        <span class="nx">getFirst</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">]);</span>  <span class="c1">// returns 10</span>
+                                        
+                                        <span class="kd">function</span> <span class="nx">getArr</span><span class="p">({</span> <span class="nx">nums</span> <span class="p">}</span> <span class="o">=</span> <span class="p">{</span> <span class="na">nums</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="p">}){</span>
+                                            <span class="k">return</span> <span class="nx">nums</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                        
+                                        <span class="nx">getArr</span><span class="p">();</span> <span class="c1">// returns [1, 2, 3, 4]</span>
+                                        <span class="nx">getArr</span><span class="p">({</span><span class="na">nums</span><span class="p">:[</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">1</span><span class="p">]});</span> <span class="c1">// returns [5,4,3,2,1]</span>
+                                        </code></pre>
+                                        </div>
+                                        <p>We can also use the parameters defined first to the parameters defined after them.<br>
+                                        </p>
+                                        <div class="highlight js-code-highlight">
+                                        <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">doSomethingWithValue</span><span class="p">(</span><span class="nx">value</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Hello World</span><span class="dl">"</span><span class="p">,</span> <span class="nx">callback</span> <span class="o">=</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">})</span> <span class="p">{</span>
+                                          <span class="nx">callback</span><span class="p">();</span>
+                                        <span class="p">}</span>
+                                        <span class="nx">doSomethingWithValue</span><span class="p">();</span> <span class="c1">//logs "Hello World"</span>
+                                        </code></pre>
+                                        </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">What does the new keyword do</h4>
+                              <p class="card-text">
+                                The new keyword is used with constructor functions to make objects 
+                                in JavaScript.
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">Employee</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">position</span><span class="p">,</span> <span class="nx">yearHired</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">position</span> <span class="o">=</span> <span class="nx">position</span><span class="p">;</span>
+                                      <span class="k">this</span><span class="p">.</span><span class="nx">yearHired</span> <span class="o">=</span> <span class="nx">yearHired</span><span class="p">;</span>
+                                    <span class="p">};</span>
+                                    
+                                    <span class="kd">const</span> <span class="nx">emp</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Employee</span><span class="p">(</span><span class="dl">"</span><span class="s2">Marko Polo</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Software Developer</span><span class="dl">"</span><span class="p">,</span> <span class="mi">2017</span><span class="p">);</span>
+                                    
+                                        </code>
+                                    </pre>
+                                </div>
+                                <p>The <code>new</code> keyword does 4 things.</p>
+                                <ul>
+                                <li>Creates an empty object.</li>
+                                <li>Assigns that empty object to the <code>this</code> value.</li>
+                                <li>The function will <em>inherit</em> from <strong>functionName.<a href="#25-what-is-the-prototype-of-an-object">prototype</a></strong>.</li>
+                                <li>Returns the <code>this</code> if no Explicit <code>return</code> statement is used.</li>
+                                </ul>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                Why does <code>typeof null</code> return <code>object</code>? How to check if a value is <code>null</code> d?
+                              </h4>
+                              <p class="card-text">
+                                <p><code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof#null">typeof null == 'object'</a></code> will always return <code>true</code> because this was the implementation of <code>null</code> since the birth of <strong>JavaScript</strong>. A fix was proposed to change <code>typeof null == 'object'</code> to <code>typeof null == 'null' </code> but was <a href="https://web.archive.org/web/20160331031419/http://wiki.ecmascript.org:80/doku.php?id=harmony:typeof_null">rejected</a> because it will lead to more bugs.</p>
+                                <p><a href="https://dev.to/_ravo_lution/why-typeof-null-is-object-181">Another explanation</a></p>
+                                <p>We can use the <code>===</code> or <strong>strict equality</strong> operator to check if a value is <code>null</code>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code>  <span class="kd">function</span> <span class="nx">isNull</span><span class="p">(</span><span class="nx">value</span><span class="p">){</span>
+                                    <span class="k">return</span> <span class="nx">value</span> <span class="o">===</span> <span class="kc">null</span><span class="p">;</span>
+                                  <span class="p">}</span>
+                                </code></pre>
+                                </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">memoization and what's the use it?</h4>
+                              <p class="card-text">
+                                <p><em>memoization</em> is a process of building a function that is capable of <strong>remembering</strong> it's previously computed results or values. <br>
+                                    The use of making a <em>memoization</em> function is that we avoid the computation of that function if it was already performed in the last calculations with the same arguments. This saves time but has a downside that we will consume more memory for saving the previous results.</p>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">memoization helper?</h4>
+                              <p class="card-text">
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">memoize</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="kd">const</span> <span class="nx">cache</span> <span class="o">=</span> <span class="p">{};</span>
+                                      <span class="k">return</span> <span class="kd">function</span> <span class="p">(</span><span class="nx">param</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="k">if</span> <span class="p">(</span><span class="nx">cache</span><span class="p">[</span><span class="nx">param</span><span class="p">])</span> <span class="p">{</span>
+                                          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">cached</span><span class="dl">'</span><span class="p">);</span>
+                                          <span class="k">return</span> <span class="nx">cache</span><span class="p">[</span><span class="nx">param</span><span class="p">];</span>
+                                        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                          <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">fn</span><span class="p">(</span><span class="nx">param</span><span class="p">);</span>
+                                          <span class="nx">cache</span><span class="p">[</span><span class="nx">param</span><span class="p">]</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
+                                          <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`not cached`</span><span class="p">);</span>
+                                          <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+                                        <span class="p">}</span>
+                                      <span class="p">}</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="kd">const</span> <span class="nx">toUpper</span> <span class="o">=</span> <span class="p">(</span><span class="nx">str</span> <span class="o">=</span><span class="dl">""</span><span class="p">)</span><span class="o">=&gt;</span> <span class="nx">str</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">();</span>
+                                    
+                                    <span class="kd">const</span> <span class="nx">toUpperMemoized</span> <span class="o">=</span> <span class="nx">memoize</span><span class="p">(</span><span class="nx">toUpper</span><span class="p">);</span>
+                                    
+                                    <span class="nx">toUpperMemoized</span><span class="p">(</span><span class="dl">"</span><span class="s2">abcdef</span><span class="dl">"</span><span class="p">);</span>
+                                    <span class="nx">toUpperMemoized</span><span class="p">(</span><span class="dl">"</span><span class="s2">abcdef</span><span class="dl">"</span><span class="p">);</span>
+                                    </code></pre>
+                                    </div>
+                                    <p>This <em>memoize</em> helper function only works on a function that accepts one <em>argument</em>. We need to make a <em>memoize</em> helper function that accepts multiple <em>arguments</em>.<br>
+                                    </p>
+                                    <div class="highlight js-code-highlight">
+                                        <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">slice</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">slice</span><span class="p">;</span>
+                                        <span class="kd">function</span> <span class="nx">memoize</span><span class="p">(</span><span class="nx">fn</span><span class="p">)</span> <span class="p">{</span>
+                                          <span class="kd">const</span> <span class="nx">cache</span> <span class="o">=</span> <span class="p">{};</span>
+                                          <span class="k">return</span> <span class="p">(...</span><span class="nx">args</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+                                            <span class="kd">const</span> <span class="nx">params</span> <span class="o">=</span> <span class="nx">slice</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="nx">args</span><span class="p">);</span>
+                                            <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">params</span><span class="p">);</span>
+                                            <span class="k">if</span> <span class="p">(</span><span class="nx">cache</span><span class="p">[</span><span class="nx">params</span><span class="p">])</span> <span class="p">{</span>
+                                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">cached</span><span class="dl">'</span><span class="p">);</span>
+                                              <span class="k">return</span> <span class="nx">cache</span><span class="p">[</span><span class="nx">params</span><span class="p">];</span>
+                                            <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                              <span class="kd">let</span> <span class="nx">result</span> <span class="o">=</span> <span class="nx">fn</span><span class="p">(...</span><span class="nx">args</span><span class="p">);</span>
+                                              <span class="nx">cache</span><span class="p">[</span><span class="nx">params</span><span class="p">]</span> <span class="o">=</span> <span class="nx">result</span><span class="p">;</span>
+                                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`not cached`</span><span class="p">);</span>
+                                              <span class="k">return</span> <span class="nx">result</span><span class="p">;</span>
+                                            <span class="p">}</span>
+                                          <span class="p">}</span>
+                                        <span class="p">}</span>
+                                        <span class="kd">const</span> <span class="nx">makeFullName</span> <span class="o">=</span> <span class="p">(</span><span class="nx">fName</span><span class="p">,</span> <span class="nx">lName</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="s2">`</span><span class="p">${</span><span class="nx">fName</span><span class="p">}</span><span class="s2"> </span><span class="p">${</span><span class="nx">lName</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                        <span class="kd">const</span> <span class="nx">reduceAdd</span> <span class="o">=</span> <span class="p">(</span><span class="nx">numbers</span><span class="p">,</span> <span class="nx">startingValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">numbers</span><span class="p">.</span><span class="nx">reduce</span><span class="p">((</span><span class="nx">total</span><span class="p">,</span> <span class="nx">cur</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">total</span> <span class="o">+</span> <span class="nx">cur</span><span class="p">,</span> <span class="nx">startingValue</span><span class="p">);</span>
+                                        
+                                        <span class="kd">const</span> <span class="nx">memoizedMakeFullName</span> <span class="o">=</span> <span class="nx">memoize</span><span class="p">(</span><span class="nx">makeFullName</span><span class="p">);</span>
+                                        <span class="kd">const</span> <span class="nx">memoizedReduceAdd</span> <span class="o">=</span> <span class="nx">memoize</span><span class="p">(</span><span class="nx">reduceAdd</span><span class="p">);</span>
+                                        
+                                        <span class="nx">memoizedMakeFullName</span><span class="p">(</span><span class="dl">"</span><span class="s2">Marko</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Polo</span><span class="dl">"</span><span class="p">);</span>
+                                        <span class="nx">memoizedMakeFullName</span><span class="p">(</span><span class="dl">"</span><span class="s2">Marko</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">Polo</span><span class="dl">"</span><span class="p">);</span>
+                                        
+                                        <span class="nx">memoizedReduceAdd</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">5</span><span class="p">);</span>
+                                        <span class="nx">memoizedReduceAdd</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="mi">5</span><span class="p">);</span>
+                                        
+                                        </code></pre>
+                                        </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">difference between a function expression and function declaration?</h4>
+                              <p class="card-text">
+                                <p>The function declaration (function statement) defines a function with the specified parameters.</p>
+                                <p>The function keyword can be used to define a function inside an expression.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="nx">hoistedFunc</span><span class="p">();</span>
+                                    <span class="nx">notHoistedFunc</span><span class="p">();</span>
+                                    
+                                    <span class="kd">function</span> <span class="nx">hoistedFunc</span><span class="p">(){</span>
+                                      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">I am hoisted</span><span class="dl">"</span><span class="p">);</span>
+                                    <span class="p">}</span>
+                                    
+                                    <span class="kd">var</span> <span class="nx">notHoistedFunc</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+                                      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">I will not be hoisted!</span><span class="dl">"</span><span class="p">);</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                    </div>
+                                    <p>The <code>notHoistedFunc</code> call throws an error while the <code>hoistedFunc</code> call does not because the <code>hoistedFunc</code> is <em>hoisted</em> while the <code>notHoistedFunc</code> is not. <br>
+                                        Read <strong>Hoisting</strong> <a href="#18-what-is-hoisting">here</a>.</p>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">What are the ways of making objects in JavaScript?</h4>
+                              <p class="card-text">
+                                <p><a href="#the-questions">↑</a> Using <strong>Object Literal</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code>  <span class="kd">const</span> <span class="nx">o</span> <span class="o">=</span> <span class="p">{</span>
+                                   <span class="na">name</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Mark</span><span class="dl">"</span><span class="p">,</span>
+                                   <span class="nx">greeting</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="s2">`Hi, I'm </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                   <span class="p">}</span>
+                                  <span class="p">};</span>
+                                
+                                  <span class="nx">o</span><span class="p">.</span><span class="nx">greeting</span><span class="p">();</span> <span class="c1">//returns "Hi, I'm Mark"</span>
+                                </code></pre>
+                                <div class="highlight__panel js-actions-panel">
+                                <div class="highlight__panel-action js-fullscreen-code-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                </svg>
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                </svg>
+                                
+                                </div>
+                                </div>
+                                </div>
+                                <p>Using <strong>Constructor Functions</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">Person</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
+                                   <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+                                <span class="p">}</span>
+                                
+                                <span class="nx">Person</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">greeting</span> <span class="o">=</span> <span class="kd">function</span> <span class="p">()</span> <span class="p">{</span>
+                                   <span class="k">return</span> <span class="s2">`Hi, I'm </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                <span class="p">}</span>
+                                
+                                <span class="kd">const</span> <span class="nx">mark</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Person</span><span class="p">(</span><span class="dl">"</span><span class="s2">Mark</span><span class="dl">"</span><span class="p">);</span>
+                                
+                                <span class="nx">mark</span><span class="p">.</span><span class="nx">greeting</span><span class="p">();</span> <span class="c1">//returns "Hi, I'm Mark"</span>
+                                </code></pre>
+                                <div class="highlight__panel js-actions-panel">
+                                <div class="highlight__panel-action js-fullscreen-code-action">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                    <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                </svg>
+                                
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                    <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                </svg>
+                                
+                                </div>
+                                </div>
+                                </div>
+                                <p>Using <strong>Object.create</strong> method.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="kd">const</span> <span class="nx">n</span> <span class="o">=</span> <span class="p">{</span>
+                                   <span class="nx">greeting</span><span class="p">()</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="s2">`Hi, I'm </span><span class="p">${</span><span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="s2">`</span><span class="p">;</span>
+                                   <span class="p">}</span>
+                                <span class="p">};</span>
+                                
+                                <span class="kd">const</span> <span class="nx">o</span> <span class="o">=</span> <span class="nb">Object</span><span class="p">.</span><span class="nx">create</span><span class="p">(</span><span class="nx">n</span><span class="p">);</span> <span class="c1">// sets the prototype of "o" to be "n"</span>
+                                
+                                <span class="nx">o</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Mark</span><span class="dl">"</span><span class="p">;</span>
+                                
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">greeting</span><span class="p">());</span> <span class="c1">// logs "Hi, I'm Mark"</span>
+                                
+                                
+                                </code></pre>
+                                </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">What's the difference between Object.seal and Object.freeze methods?</h4>
+                              <p class="card-text">
+                                <p>The difference between these two methods is that when we use the <code>Object.freeze</code> method to an object, that object's properties are immutable meaning we can't change or edit the values of those properties. While in the <code>Object.seal</code> method we can change those existing properties but we cannot add new properties to the object.</p>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title"> What's the difference between the in operator and the hasOwnProperty method in objects?</h4>
+                              <p class="card-text">
+                                <p>As you know both of these features check if a property exists in an object. It will return <code>true</code>false. The difference between them is that the <code>in</code> operator also checks the objects' <strong>Prototype Chain</strong> if the property was not found in the current object while the  <code>hasOwnProperty</code> method just checks if the property exists in the current object ignoring the <strong>Prototype Chain</strong>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="c1">// We'll still use the object in the previous question.</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">prop</span><span class="dl">"</span> <span class="k">in</span> <span class="nx">o</span><span class="p">);</span> <span class="c1">// This logs true;</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">toString</span><span class="dl">"</span> <span class="k">in</span> <span class="nx">o</span><span class="p">);</span> <span class="c1">// This logs true, the toString method is available in this object's prototype which is the Object.prototype</span>
+                                    
+                                    
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">prop</span><span class="dl">"</span><span class="p">));</span> <span class="c1">// This logs true</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">o</span><span class="p">.</span><span class="nx">hasOwnProperty</span><span class="p">(</span><span class="dl">"</span><span class="s2">toString</span><span class="dl">"</span><span class="p">));</span> <span class="c1">// This logs false, does not check the object's prototype</span>
+                                    </code></pre>
+                                    </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title"> How to check if a number is even without using the % or modulo operator?</h4>
+                              <p class="card-text">
+                                <p> We can use the <strong>bitwise AND</strong><code>&amp;</code> operator for this problem. The <code>&amp;</code> operates on its operand and treats them as binary values and performs the <strong>AND</strong> operation.<br>
+                                </p>
+
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">isEven</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&amp;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+                                        <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+                                      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+                                        <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+                                      <span class="p">}</span>
+                                    <span class="p">};</span>
+                                    </code></pre>
+                                </div>
+
+                                <p><code>0</code> in binary is <strong>000</strong>.<br>
+                                    <code>1</code> in binary is <strong>001</strong>.<br>
+                                    <code>2</code> in binary is <strong>010</strong>.<br>
+                                    <code>3</code> in binary is <strong>011</strong>.<br>
+                                    <code>4</code> in binary is <strong>100</strong>.<br>
+                                    <code>5</code> in binary is <strong>101</strong>.<br>
+                                    <code>6</code> in binary is <strong>110</strong>.<br>
+                                    <code>7</code> in binary is <strong>111</strong>.<br>
+                                    and so on...</p>
+                                    <div class="table-wrapper-paragraph"><table>
+                                    <thead>
+                                    <tr>
+                                    <th><code>a</code></th>
+                                    <th><code>b</code></th>
+                                    <th><code>a &amp; b</code></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    </tr>
+                                    <tr>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    </tr>
+                                    <tr>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    </tr>
+                                    <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    </tr>
+                                    </tbody>
+                                    </table></div>
+                                    <p>So when we <code>console.log</code> this expression <code>5 &amp; 1</code> it returns <code>1</code>. Ok, first the <code>&amp;</code> operator converts both numbers to binary so <code>5</code> turns to <strong>101</strong> and <code>1</code> turns to <strong>001</strong>. <br>
+                                    Then it compares every bit <strong>(0's and 1's)</strong> using the bitwise <strong>AND</strong> operator. <strong>101</strong> <code>&amp;</code> <strong>001</strong>. As we can see from the table the result can be only <code>1</code> if <code>a</code> <strong>AND</strong> <code>b</code> are <code>1</code>.</p>
+                                    <div class="table-wrapper-paragraph"><table>
+                                    <thead>
+                                    <tr>
+                                    <th><code>101 &amp; 001</code></th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                    <td>101</td>
+                                    </tr>
+                                    <tr>
+                                    <td>001</td>
+                                    </tr>
+                                    <tr>
+                                    <td><strong>001</strong></td>
+                                    </tr>
+                                    </tbody>
+                                    </table></div>
+                                    <ul>
+                                    <li>So first we compare the left most bit <code>1</code><code>&amp;</code><code>0</code> the result should be <code>0</code>.</li>
+                                    <li>Then we compare the middle bit <code>0</code><code>&amp;</code><code>0</code> the result should be <code>0</code>.</li>
+                                    <li>Then we compare the last bit <code>1</code><code>&amp;</code><code>1</code> the result should be <code>1</code>.</li>
+                                    <li>Then the binary result <code>001</code> will be converted to a decimal number which will be <code>1</code>.</li>
+                                    </ul>
+                                    <p>If we <code>console.log</code> this expression <code>4 &amp; 1</code> it will return <code>0</code>. Knowing the last bit of <code>4</code> is <code>0</code> and <code>0 &amp; 1</code> will be <code>0</code>. If you have a hard time understand this we could use a <strong>recursive</strong> function to solve this problem.<br>
+                                    </p>
+                                    <div class="highlight js-code-highlight">
+                                        <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">isEven</span><span class="p">(</span><span class="nx">num</span><span class="p">)</span> <span class="p">{</span>
+                                          <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">num</span> <span class="o">===</span> <span class="mi">1</span><span class="p">)</span> <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+                                          <span class="k">if</span> <span class="p">(</span><span class="nx">num</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+                                          <span class="k">return</span> <span class="nx">isEven</span><span class="p">(</span><span class="nx">num</span> <span class="o">-</span> <span class="mi">2</span><span class="p">);</span>
+                                        <span class="p">}</span>
+                                        </code></pre>
+                                        </div>
+                              </p>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Wrapper Object</h4>
+                              <p class="card-text">
+                                Arrow function, classes, Templae Strings, Enhanced Object Literals
+                                Object Destruction, Promises, Generators, Modules, Symbol, Proxis,
+                                Sets, Default Funciton parameters, Rest and Spread, Block Scoping let and const
+                              </p>
+                              <p><strong>Primitive Values</strong> like <code>string</code>,<code>number</code> and <code>boolean</code> with the exception of <code>null</code> and <code>undefined</code> have properties and methods even though they are not <code>objects</code>.<br>
+                              </p>
+                              <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">name</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">marko</span><span class="dl">"</span><span class="p">;</span>
+                                
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">name</span><span class="p">);</span> <span class="c1">// logs  "string"</span>
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">name</span><span class="p">.</span><span class="nx">toUpperCase</span><span class="p">());</span> <span class="c1">// logs  "MARKO"</span>
+                                </code></pre>
+                                </div>
+                                <p><code>name</code> is a <code>primitive string</code> value that has no properties and methods but in this example we are calling a <code>toUpperCase()</code> method which does not throw an error but returns <code>MARKO</code>.</p>
+                                <p>The reason for this is that the <code>primitive</code> value is temporarily converted or <em>coerce</em> to an <code>object</code> so the <code>name</code> variable behaves like an <code>object</code>. Every <code>primitive</code> except <code>null</code> and <code>undefined</code> have <strong>Wrapper Objects</strong>. The Wrapper Objects are <code>String</code>,<code>Number</code>,<code>Boolean</code>,<code>Symbol</code> and <code>BigInt</code>. In this case, the <code>name.toUpperCase()</code> invocation, behind the scenes it looks like this.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript"><code>
+                                <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="k">new</span> <span class="nb">String</span><span class="p">(</span><span class="nx">name</span><span class="p">).</span><span class="nx">toUpperCase</span><span class="p">());</span> <span class="c1">// logs  "MARKO"</span>
+                                
+                                </code></pre>
+                                </div>
+                                <p>The newly created object is immediately discarded after we finished accessing a property or calling a method.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">What is the difference between Implicit and Explicit Coercion?</h4>
+                              <p class="card-text">
+                                <p> <strong>Implicit</strong> Coercion is a way of converting values to another type without us programmer doing it directly or by hand.</p>
+                              </p>
+                              <p>Suppose we have an example below.<br>
+                              </p>
+                              <div class="highlight js-code-highlight">
+                              <pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">);</span>
+                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="kc">false</span> <span class="o">+</span> <span class="kc">true</span><span class="p">);</span>
+                              <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">6</span> <span class="o">*</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">);</span>
+                              
+                              </code></pre>
+                              </div>
+                              <p>The <strong>first</strong> <code>console.log</code> statement logs <code>16</code>. In other languages this would throw a compile time error but in <strong>JavaScript</strong> the <code>1</code> is converted to a <code>string</code> then concatenated with the <code>+</code> operator. We did not do anything, yet it was converted automatically by <strong>JavaScript</strong> for us. <br>
+                              The <strong>second</strong> <code>console.log</code> statement logs <code>1</code>, it converts the <code>false</code> to a <code>boolean</code> which will result to a <code>0</code> and the <code>true</code> will be <code>1</code> hence the result is <code>1</code>. <br>
+                              The <strong>third</strong> <code>console.log</code> statement logs <code>12</code>, it converts the <code>'2'</code> to a <code>number</code> before multiplying <code>6 * 2</code> hence the result <code>12</code>.<br>
+                              <a href="https://delapouite.com/ramblings/javascript-coercion-rules.html">JavaScript Coercion Rules</a></p>
+                              <p>While <strong>Explicit</strong> Coercion is the way of converting values to another type where we (<em>programmers</em>) <strong>explicitly</strong> do it.<br>
+                              </p>
+                              <div class="highlight js-code-highlight">
+                              <pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="mi">1</span> <span class="o">+</span> <span class="nb">parseInt</span><span class="p">(</span><span class="dl">'</span><span class="s1">6</span><span class="dl">'</span><span class="p">));</span>
+                              </code></pre>
+                              </div>
+                              <p>In this example, we use the <code>parseInt</code> function to convert the <code>'6'</code> to a <code>number</code> then adding the <code>1</code> and <code>6</code> using the <code>+</code> operator.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">
+                                What is <code>NaN</code>? and How to check if a value is <code>NaN</code>?
+                              </h4>
+                              <p class="card-text">
+                                <p><a href="#the-questions">↑</a> <code>NaN</code> means <strong>"Not A Number"</strong> is a value in <strong>JavaScript</strong> that is a result in converting or performing an operation to a number to non-number value hence results to <code>NaN</code>.<br>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">let</span> <span class="nx">a</span><span class="p">;</span>
+                                    
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="dl">'</span><span class="s1">abc</span><span class="dl">'</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="kc">null</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="kc">undefined</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="o">++</span><span class="nx">a</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">({}</span> <span class="o">*</span> <span class="mi">10</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="dl">'</span><span class="s1">abc</span><span class="dl">'</span> <span class="o">-</span> <span class="mi">2</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="mi">0</span> <span class="o">/</span> <span class="mi">0</span><span class="p">));</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="dl">'</span><span class="s1">10a</span><span class="dl">'</span> <span class="o">*</span> <span class="mi">10</span><span class="p">));</span>
+                                    
+                                    </code></pre>
+                                    <div class="highlight__panel js-actions-panel">
+                                    <div class="highlight__panel-action js-fullscreen-code-action">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-on"><title>Enter fullscreen mode</title>
+                                        <path d="M16 3h6v6h-2V5h-4V3zM2 3h6v2H4v4H2V3zm18 16v-4h2v6h-6v-2h4zM4 19h4v2H2v-6h2v4z"></path>
+                                    </svg>
+                                    
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" class="highlight-action crayons-icon highlight-action--fullscreen-off"><title>Exit fullscreen mode</title>
+                                        <path d="M18 7h4v2h-6V3h2v4zM8 9H2V7h4V3h2v6zm10 8v4h-2v-6h6v2h-4zM8 15v6H6v-4H2v-2h6z"></path>
+                                    </svg>
+                                    
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <p><strong>JavaScript</strong> has a built-in method <code>isNaN</code> that tests if value is <code>isNaN</code> value. But this function has a weird behaviour.<br>
+                                    </p>
+                                    <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">());</span> <span class="c1">//logs true</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="kc">undefined</span><span class="p">));</span> <span class="c1">//logs true</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">({}));</span> <span class="c1">//logs true</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(</span><span class="nb">String</span><span class="p">(</span><span class="dl">'</span><span class="s1">a</span><span class="dl">'</span><span class="p">)));</span> <span class="c1">//logs true</span>
+                                    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nb">isNaN</span><span class="p">(()</span> <span class="o">=&gt;</span> <span class="p">{</span> <span class="p">}));</span> <span class="c1">//logs true</span>
+                                    </code></pre>
+                                    </div>
+                                    <p>All these <code>console.log</code> statements return <code>true</code> even though those values we pass are not <code>NaN</code>.</p>
+                                    <p>In <strong>ES6</strong> or <strong>ECMAScript 2015</strong>, it is recommended that we use <code>Number.isNaN</code> method because it really checks the value if it really is <code>NaN</code> or we can make our own helper function that check for this problem because in <strong>JavaScript</strong> <code>NaN</code> is the only value that is not equal to itself.<br>
+                                    </p>
+                                    <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript"><code><span class="kd">function</span> <span class="nx">checkIfNaN</span><span class="p">(</span><span class="nx">value</span><span class="p">)</span> <span class="p">{</span>
+                                      <span class="k">return</span> <span class="nx">value</span> <span class="o">!==</span> <span class="nx">value</span><span class="p">;</span>
+                                    <span class="p">}</span>
+                                    </code></pre>
+                                    </div>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Values vs. References</h4>
+                              <p class="card-text">
+                                <p>
+                                    In many languages, the developer can choose between assigning/passing a value as the value itself, or as a reference to the value. In JS, however, this decision is entirely determined by the kind of value. That surprises a lot of developers from other languages when they start using JS.
+                                </p>
+                                <p>If you assign/pass a value itself, the value is copied. For example:</p>                                
+                              </p>
+                              <div class="highlight js-code-highlight">
+                                <pre class="highlight javascript">
+                                    <code>
+                                    var myName = "Kyle";
+
+                                    var yourName = myName;
+                                    </code>
+                                </pre>
+                                </div>
+                                <p>Here, the yourName variable has a separate copy of the "Kyle" string from the value that's stored in myName. That's because the value is a primitive, and primitive values are always assigned/passed as value copies.
+
+                                    Here's how you can prove there's two separate values involved:<br/>
+                                    By contrast, references are the idea that two or more variables are pointing at the same value, such that modifying this shared value would be reflected by access via any of those references. In JS, only object values (arrays, objects, functions, etc.) are treated as references.
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code>
+                                            var myAddress = {
+                                                street: "123 JS Blvd",
+                                                city: "Austin",
+                                                state: "TX"
+                                            };
+                                            
+                                            var yourAddress = myAddress;
+                                            
+                                            // I've got to move to a new house!
+                                            myAddress.street = "456 TS Ave";
+                                            
+                                            console.log(yourAddress.street);
+                                            // 456 TS Ave
+                                        </code>
+                                    </pre>
+                                </div> 
+                                <p>
+                                    Because the value assigned to myAddress is an object, it's held/assigned by reference, and thus the assignment to the yourAddress variable is a copy of the reference, not the object value itself. That's why the updated value assigned to the myAddress.street is reflected when we access yourAddress.street. myAddress and yourAddress have copies of the reference to the single shared object, so an update to one is an update to both.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Currying in JavaScript</h4>
+                              <p class="card-text">
+                                <p>
+                                    Currying is a process in functional programming in which we can transform a function with multiple arguments into a sequence of nesting functions. It returns a new function that expects the next argument inline.
+                                    <br/> <a href="https://blog.bitsrc.io/understanding-currying-in-javascript-ceb2188c339">Currying</a>
+                                </p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code>
+                                            function multiply(a) {
+                                                return (b) => {
+                                                    return (c) => {
+                                                        return a * b * c
+                                                    }
+                                                }
+                                            }
+                                            log(multiply(1)(2)(3)) // 6
+                                        </code>
+                                    </pre>
+                                </div>    
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">setTimeout and setInterval</h4>
+                              <p class="card-text">
+                                <a href="https://javascript.info/settimeout-setinterval">Scheduling in JS</a>
+                                <ul>
+                                    <li>setTimeout allows us to run a function once after the interval of time.</li>
+                                    <li>setInterval allows us to run a function repeatedly, starting after the interval of time, then repeating continuously at that interval.</li>
+                                </ul>
+                                <p>
+                                    Zero delay setTimeout
+                                </p>
+                                <p>There’s a special use case: <code>setTimeout(func, 0)</code>, or just <code>setTimeout(func)</code>.</p>
+                                <p>This schedules the execution of <code>func</code> as soon as possible. But the scheduler will invoke it only after the currently executing script is complete.</p>
+                                <p>So the function is scheduled to run “right after” the current script.</p>
+                                <p>For instance, this outputs “Hello”, then immediately “World”:</p>
+                                <div class="highlight js-code-highlight">
+                                    <pre class="highlight javascript">
+                                        <code>
+                                            setTimeout(() => alert("World"));
+
+                                            alert("Hello");
+                                        </code>
+                                    </pre>
+                                </div>
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- Footer-->
+        <footer class="border-top">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

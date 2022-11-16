@@ -11549,6 +11549,14 @@ div.highlight {
   position: relative;
 }
 
-.text-styles div.highlight {
-  margin: 0 0 var(--content-rhythm) 0;
+tr {
+  border-bottom: 1px slategray solid;
+}
+
+pre, code{
+  white-space:pre;
+}
+
+pre:not(.highlight), div.highlight {
+  margin: 0 0 var(--content-rhythm) 0
 }
