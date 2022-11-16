@@ -113,6 +113,27 @@
                               </p>
                             </div>
                         </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">Event Loop</h4>
+                              <p class="card-text">
+                                The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it.
+                                <a href="https://blog.sessionstack.com/how-javascript-works-event-loop-and-the-rise-of-async-programming-5-ways-to-better-coding-with-2f077c4438b5">Event Loop</a>
+                              </p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h4 class="card-title">How setTimeout(…) works</h4>
+                              <p class="card-text">
+                                It’s important to note that setTimeout(…) doesn’t automatically put your callback on the event loop queue. It sets up a timer. When the timer expires, the environment places your callback into the event loop, so that some future tick will pick it up and execute it. Take a look at this code:
+                                <code>setTimeout(myCallback, 1000);</code>
+                                <p>That doesn’t mean that myCallback will be executed in 1,000 ms but rather that, in 1,000 ms, myCallback will be added to the event loop queue. The queue, however, might have other events that have been added earlier — your callback will have to wait.</p>
+                              </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
